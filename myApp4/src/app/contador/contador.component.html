@@ -1,0 +1,9 @@
+<button (click)="restarValor()">-</button>
+<input type="text" [(ngModel)]="valor" >
+<button (click)="sumarValor()">+</button>
+<br>
+<label for="">El valor del input es: {{valor}}</label>
+<br>
+<label for="" *ngIf="error">El valor no es valido</label>
+<br>
+<label for="" *ngIf="valor >= 10">Ya no puede subir el valor</label>
